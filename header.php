@@ -30,16 +30,14 @@
       <li class="nav-item">
         <a class="nav-link" href="index.php">Nossos Planos</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Contato
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="form.php">Inserir Planos</a>
-          <a class="dropdown-item" href="atualiza.php">Atualizar Planos</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="excluir.php">Excluir Plano</a>
-        </div>
+       <li class="nav-item">
+        <a class="nav-link" href="form.php">Inserir Planos</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="atualiza.php">Atualizar Planos</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="excluir.php">Excluir Planos</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0" method="POST" action="busca.php">

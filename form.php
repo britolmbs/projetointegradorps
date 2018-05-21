@@ -15,12 +15,19 @@
 		</div>
 
 		<div class="form-group">
-			<label for="abrangencia">Abrangencia: </label>
-			<input type="text" name="abrangencia"  id="abrangencia" class="form-control form-control-lg" />
+			<label class="col-md-4 control-label" for="abrangencia">Abrangência</label>
+			 <div class="col-md-5">
+    <select id="abrangencia" name="abrangencia" class="form-control-lg">
+			<option value="municipal">Municipal</option>
+			<option value="estadual">Estadual</option>
+			<option value="nacional">Nacional</option>
+			<option value="internacional">Internacional</option>
+			</select>
+		</div>
 		</div>
 		<div class="form-group">
 			<label for="foto">Foto: </label>
-		<input type="text" name="foto" id="foto" class="form-control form-control-lg" />
+		<input type="file" name="foto" id="foto" class="form-control form-control-lg" />
 
 		</div>
 			<button type="submit" class="btn btn-dark btn-lg">Enviar</button>

@@ -1,10 +1,11 @@
 <?php include "header.php"; ?>
 <div class="container">
 <section>
-	<div class="row">
+<div class="container">
+<div class="row">
 		 
  <?php 
-$sql = "SELECT * FROM planos order by id desc limit 3";
+$sql = "SELECT * FROM planos WHERE status = 'ativo'";
 $result = $conn->query($sql);
 if($result->num_rows>0){
 	while($row = $result->fetch_assoc()){
@@ -12,7 +13,7 @@ if($result->num_rows>0){
 <p>&nbsp;</p>
 
 
-<div class="card col-md-3 col-lg-3">
+<div class="card col-md-2 col-lg-2">
   <img class="produto card-img-top" src="img/<?php echo $row['foto']; ?>" alt="Card image cap">
   <div class="card-body">
     <h5 class="card-title"><?php echo $row['nome']; ?></h5>
@@ -22,7 +23,7 @@ if($result->num_rows>0){
     </div>
 
 
-		 <?php 
+<?php 
 
 		}
 }
@@ -33,6 +34,7 @@ $conn->close();
 ?>
 	</div>
 </section>
+</div>
 </div>
 
 <?php include "footer.php"; ?>

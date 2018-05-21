@@ -4,8 +4,10 @@ include "header.php";
 
 $id = $_POST['id'];
 $preco = $_POST['preco'];
+$nome = $_POST['nome'];
+$abrangencia = $_POST['abrangencia'];
 
-$sql = "UPDATE planos SET preco='$preco' WHERE id=$id";
+$sql = "UPDATE planos SET preco='$preco' , nome='$nome' , abrangencia= '$abrangencia' WHERE id=$id";
 
 if ($conn->query($sql) === TRUE) {                                                            
 ?>

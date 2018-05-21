@@ -4,7 +4,8 @@ include "header.php";
 
 $id = $_POST['id'];
 
-$sql = "DELETE FROM planos WHERE id=$id";
+//$sql = "DELETE FROM planos WHERE id=$id";
+$sql = "UPDATE planos SET status = 'apagado' WHERE id = '$id'";
 
 if ($conn->query($sql) === TRUE) {                                                            
 ?>
